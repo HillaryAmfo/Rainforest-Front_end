@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHealth - Agroforestry Events & Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* General Body & HTML Reset */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Font Assignments */
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .merriweather {
+            font-family: 'Merriweather', serif;
+        }
+
+        /* Hero section background image - more agroforestry focused */
+        .hero-agroforestry-events {
+            background-image: url('https://images.unsplash.com/photo-1543888362-e91060938676?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            /* Image of trees integrated into a farm landscape */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Image styling for event/resource cards */
+        .card-image {
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 16/9;
+        }
+    </style>
+</head>
+
+<body class="bg-green-50 text-gray-800">
+
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div id="header"></div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#upcoming-events" class="text-green-700 hover:text-green-500 font-semibold transition-colors">Upcoming</a></li>
+                    <li><a href="#past-highlights" class="text-green-700 hover:text-green-500 font-semibold transition-colors">Highlights</a></li>
+                    <li><a href="#knowledge-hub" class="text-green-700 hover:text-green-500 font-semibold transition-colors">Knowledge Hub</a></li>
+                    <li><a href="#get-involved" class="text-green-700 hover:text-green-500 font-semibold transition-colors">Get Involved</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-agroforestry-events py-20 md:py-32 text-white text-center relative">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-4 relative z-10 max-w-6xl">
+            <h1 class="merriweather text-4xl md:text-6xl font-bold mb-6 leading-tight">Cultivating Prosperity: Agroforestry Events & Learning</h1>
+            <p class="text-lg md:text-xl mb-8">Join workshops, field days, and access resources to grow sustainable food systems and resilient livelihoods in Ghana.</p>
+            <a href="#upcoming-events"
+                class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors inline-block shadow-lg">Discover Agroforestry Events</a>
+        </div>
+    </section>
+
+    <section id="upcoming-events" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="merriweather text-3xl font-bold text-green-700 text-center mb-10">Upcoming Agroforestry Engagements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-green-50 rounded-lg shadow-lg overflow-hidden border border-green-200">
+                    <div class="card-image h-48" style="background-image: url('https://images.unsplash.com/photo-1614747530438-e69df8b1d75c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="p-6">
+                        <h3 class="merriweather text-xl font-semibold text-green-600 mb-2">Practical Agroforestry Design Workshop</h3>
+                        <p class="text-gray-700 text-sm mb-3">Learn to design productive and resilient farm systems with integrated trees.</p>
+                        <p class="text-gray-600 text-xs mb-1"><strong class="text-green-700">Date:</strong> August 12-14, 2024</p>
+                        <p class="text-gray-600 text-xs mb-1"><strong class="text-green-700">Time:</strong> 9:00 AM - 4:00 PM Daily</p>
+                        <p class="text-gray-600 text-xs mb-4"><strong class="text-green-700">Location:</strong> Amasaman Agricultural Centre, Accra</p>
+                        <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full text-sm transition-colors">Register Now</a>
+                    </div>
+                </div>
+                <div class="bg-green-50 rounded-lg shadow-lg overflow-hidden border border-green-200">
+                    <div class="card-image h-48" style="background-image: url('https://images.unsplash.com/photo-1579737130985-e216895d3ee3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="p-6">
+                        <h3 class="merriweather text-xl font-semibold text-green-600 mb-2">Soil Health & Carbon Sequestration Field Day</h3>
+                        <p class="text-gray-700 text-sm mb-3">Explore techniques for improving soil fertility and carbon capture on your farm.</p>
+                        <p class="text-gray-600 text-xs mb-1"><strong class="text-green-700">Date:</strong> September 5, 2024</p>
+                        <p class="text-gray-600 text-xs mb-1"><strong class="text-green-700">Time:</strong> 9:00 AM - 1:00 PM</p>
+                        <p class="text-gray-600 text-xs mb-4"><strong class="text-green-700">Location:</strong> Odumase Agroforestry Demo Farm, Ga West</p>
+                        <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full text-sm transition-colors">Sign Up</a>
+                    </div>
+                </div>
+                <div class="bg-green-50 rounded-lg shadow-lg overflow-hidden border border-green-200">
+                    <div class="card-image h-48" style="background-image: url('https://images.unsplash.com/photo-1629851761617-640a3e80c58a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="p-6">
+                        <h3 class="merriweather text-xl font-semibold text-green-600 mb-2">Water Harvesting Techniques for Farm Resilience</h3>
+                        <p class="text-gray-700 text-sm mb-3">Master simple methods to collect and conserve water, crucial for dry seasons.</p>
+                        <p class="text-gray-600 text-xs mb-1"><strong class="text-green-700">Date:</strong> October 20, 2024</p>
+                        <p class="text-gray-600 text-xs mb-1"><strong class="text-green-700">Time:</strong> 10:00 AM - 3:00 PM</p>
+                        <p class="text-600 text-xs mb-4"><strong class="text-green-700">Location:</strong> Community Learning Center, Dodowa</p>
+                        <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full text-sm transition-colors">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="past-highlights" class="py-16 bg-green-100">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="merriweather text-3xl font-bold text-green-700 text-center mb-10">Agroforestry Highlights & Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row border border-green-200">
+                    <div class="card-image h-48 md:h-auto md:w-1/2" style="background-image: url('https://images.unsplash.com/photo-1606553818451-91a03f4f1d4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="p-6 md:w-1/2">
+                        <h3 class="merriweather text-xl font-semibold text-green-600 mb-2">Launch of Integrated Farm System Demo Site</h3>
+                        <p class="text-gray-700 text-sm mb-3">Inaugurated a new demonstration farm showcasing silvopasture, alley cropping, and diverse food forests for local farmers.</p>
+                        <p class="text-gray-600 text-xs"><strong class="text-green-700">Impact:</strong> Provided hands-on learning for 300+ visitors, inspired new sustainable practices.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row border border-green-200">
+                    <div class="card-image h-48 md:h-auto md:w-1/2" style="background-image: url('https://images.unsplash.com/photo-1628108427976-df16035ec8b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="p-6 md:w-1/2">
+                        <h3 class="merriweather text-xl font-semibold text-green-600 mb-2">Advanced Training in Cocoa Agroforestry</h3>
+                        <p class="text-gray-700 text-sm mb-3">Equipped 100 cocoa farmers with advanced techniques for integrating diverse shade trees and organic pest management, improving yields and resilience.</p>
+                        <p class="text-gray-600 text-xs"><strong class="text-green-700">Impact:</strong> Enhanced climate resilience and income for 100 farming families.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors shadow-md">Explore All Past Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="knowledge-hub" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="merriweather text-3xl font-bold text-green-700 text-center mb-10">Knowledge Hub: Agroforestry & Sustainable Practices</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-green-50 rounded-lg shadow-lg overflow-hidden border border-green-200">
+                    <div class="card-image h-48" style="background-image: url('https://images.unsplash.com/photo-1616400329596-fdd2e541f531?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="p-6">
+                        <h3 class="merriweather text-xl font-semibold text-green-600 mb-2">Practical Guide to Establishing a Food Forest</h3>
+                        <p class="text-gray-700 text-sm mb-4">Learn step-by-step how to create a multi-layered, low-maintenance food system in your backyard or farm.</p>
+                        <a href="#" class="text-green-500 hover:underline font-semibold text-sm">Download Guide <span class="ml-1">&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="bg-green-50 rounded-lg shadow-lg overflow-hidden border border-green-200">
+                    <div class="card-image h-48" style="background-image: url('https://images.unsplash.com/photo-1620021674403-1250325d2b0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="p-6">
+                        <h3 class="merriweather text-xl font-semibold text-green-600 mb-2">Biochar Production & Application Workshop</h3>
+                        <p class="text-gray-700 text-sm mb-4">Discover how to create and use biochar to dramatically improve soil health and carbon sequestration. (Next workshop: Nov 10, 2024)</p>
+                        <a href="#" class="text-green-500 hover:underline font-semibold text-sm">Register for Workshop <span class="ml-1">&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="bg-green-50 rounded-lg shadow-lg overflow-hidden border border-green-200">
+                    <div class="card-image h-48" style="background-image: url('https://images.unsplash.com/photo-1549447363-f2d4e7d4d420?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+                    <div class="p-6">
+                        <h3 class="merriweather text-xl font-semibold text-green-600 mb-2">Integrated Pest Management in Agroforestry Handbook</h3>
+                        <p class="text-gray-700 text-sm mb-4">A comprehensive guide to managing pests naturally within your agroforestry system.</p>
+                        <a href="#" class="text-green-500 hover:underline font-semibold text-sm">Read Online <span class="ml-1">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors shadow-md">Explore All Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-involved" class="py-16 bg-green-100 text-center">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="merriweather text-3xl font-bold text-green-700 mb-6">Partner with us for a Greener Tomorrow!</h2>
+            <p class="text-lg text-gray-700 mb-8">Join our network of farmers, volunteers, and advocates passionate about fostering sustainable food systems and ecological resilience in Ghana.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors shadow-lg">Volunteer on Our Farms</a>
+                <a href="#" class="bg-white border-2 border-green-500 text-green-700 hover:bg-green-50 hover:text-green-800 font-semibold py-3 px-8 rounded-full text-lg transition-colors shadow-lg">Subscribe to Our Agroforestry Newsletter</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer" class="bg-green-600 text-white py-8"></div>
+<script src="/Rainforest-Front_end/assets/js/events.js"></script>
+</body>
+
+</html>

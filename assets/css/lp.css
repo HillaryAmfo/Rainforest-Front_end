@@ -1,0 +1,20 @@
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1617957748155-85cf0f064b4e');
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    background-color: #22c55e;
+    /* Tailwind green-500 */
+    color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover p {
+    color: white;
+}

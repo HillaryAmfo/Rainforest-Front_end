@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work - Biodiversity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body class="bg-white font-sans">
+  <div id="header"></div>
+
+  <section class="text-center py-12 px-4">
+    <h1 class="text-3xl font-bold mb-4">OUR WORK</h1>
+    <p class="max-w-3xl mx-auto text-gray-700 mb-8">Rainforest Connection (RFCx) builds and deploys scalable, open acoustic monitoring systems that can halt illegal logging and poaching, and can enable biodiversity measurement and monitoring.</p>
+
+    <!-- New Image Block -->
+    <div class="relative h-60 max-w-4xl mx-auto mb-8">
+      <img id="midImage" src="assets/images/banner-biodiversity.jpg" alt="Mid Image" class="w-full h-full object-cover rounded shadow" />
+    </div>
+
+    <div class="flex justify-center gap-6 text-2xl">
+      <button onclick="showTab('monitoring')" title="Bio-Acoustic Monitoring"><i class="fas fa-wave-square"></i></button>
+      <button onclick="showTab('poaching')" title="Stop Animal Poaching"><i class="fas fa-paw"></i></button>
+      <button onclick="showTab('deforestation')" title="Illegal Deforestation"><i class="fas fa-tree"></i></button>
+    </div>
+  </section>
+
+  <section id="monitoring" class="tab-content max-w-4xl mx-auto px-4 py-8 bg-gray-100 border-l-8 border-gray-300">
+    <h2 class="text-3xl font-extrabold text-green-900 mb-6">BIO–ACOUSTIC MONITORING</h2>
+  <p class="mb-4 text-gray-800 leading-relaxed text-lg">Help us create the world’s biggest shareable, searchable Audio Ark of rainforest sounds and eco-data.</p>
+  <p class="font-semibold mb-3 text-gray-900 text-lg">A bio-acoustic platform that lets you browse the “worldwide rainforest.”</p>
+  <p class="mb-6 text-gray-800 leading-relaxed text-lg">Every birdcall, insect chirrup, rustle in the leaves, and drop of rain: We’re creating a digital library that can give scientists instant access to vast troves of raw, acoustic data collected from rainforests worldwide. By subscribing to our service, your support helps us further incentivize and fund rainforest protection.</p>
+  <p class="font-bold mb-3 text-gray-900 text-lg">Why gathering real-time data on rainforests is fundamentally important.</p>
+  <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2 text-base">
+    <li><span class="font-medium">For the first time in history</span> we’re within a stone’s throw of creating the world’s most remarkable data set: A trove of life science and eco-data on a platform that lets scientists compare month over month, year over year changes to our planet’s most endangered ecosystems in order to protect their health.</li>
+    <li>The information can be used for <span class="font-medium">land management, policy changes</span> and allocation of limited resources for greater impact.</li>
+    <li>In Ecuador we initiated our <span class="font-medium">first proof of concept</span> by monitoring two endangered species of parrots that our partners re-introduced to a key reserve area. Sound/Alerts and patterns of activity help rangers to monitor, support and protect the successful re-introduction of the species.</li>
+    <li><span class="font-medium">24/7 alerts</span> for the vocalizations of these endangered species have provided local ecologists a trove of data to study and improve outcomes for the reintroduction of key species.</li>
+  </ul>
+  <p class="mb-3 font-bold text-gray-900 text-lg">Ways you can get involved.</p>
+  <p class="text-base text-gray-700">If you have other ideas on how to help – or if you have a project you’re looking for assistance on – feel free to contact us at <a href="mailto:contact@rfcx.org" class="text-orange-600 underline">contact@rfcx.org</a>.</p>
+  </section>
+
+  <section id="poaching" class="tab-content hidden max-w-4xl mx-auto px-4 py-8 bg-gray-100 border-l-8 border-gray-300">
+    <h2 class="text-2xl font-bold mb-4">STOP ANIMAL POACHING</h2>
+    <p class="mb-4">The RFCx system helps our partners detect and respond to poaching using sound alerts and pattern recognition of vehicles and foot traffic.</p>
+    <ul class="list-disc pl-6 mb-4 text-gray-700">
+      <li>Real-time alerts help protect endangered animals</li>
+      <li>Enables smarter ranger deployment and risk prediction</li>
+      <li>Combats illegal bushmeat hunting and biodiversity loss</li>
+    </ul>
+    <p class="mb-4"><strong>Ways you can get involved:</strong> Contact us at <a href="mailto:contact@rfcx.org" class="text-blue-600 underline">contact@rfcx.org</a></p>
+  </section>
+
+  <section id="deforestation" class="tab-content hidden max-w-4xl mx-auto px-4 py-8 bg-gray-100 border-l-8 border-gray-300">
+    <h2 class="text-2xl font-bold mb-4">PREVENT ILLEGAL DEFORESTATION</h2>
+    <p class="mb-4">Illegal deforestation contributes heavily to climate change and biodiversity loss. Our systems empower partners to protect key areas and stop logging in real-time.</p>
+    <ul class="list-disc pl-6 mb-4 text-gray-700">
+      <li>Deforestation causes 17% of global carbon emissions</li>
+      <li>Protect Indigenous lands and global biodiversity</li>
+      <li>Deploys real-time acoustic monitoring and data alerts</li>
+    </ul>
+    <p class="mb-4"><strong>Ways you can get involved:</strong> Contact us at <a href="mailto:contact@rfcx.org" class="text-blue-600 underline">contact@rfcx.org</a></p>
+  </section>
+  <div id="bannerContainer" class="relative h-72 overflow-hidden">
+    <img id="bannerImage" src="assets/images/banner-biodiversity.jpg" alt="Banner" class="absolute inset-0 w-full h-full object-cover" />
+    <div id="bannerText" class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-xl font-bold px-4 text-center">
+      "52 PERCENT OF THE WORLD'S BIODIVERSITY IS GONE."
+    </div>
+  </div>
+
+  <script>
+    const banners = {
+      monitoring: {
+        image: "assets/images/banner-biodiversity.jpg",
+        text: "52 PERCENT OF THE WORLD'S BIODIVERSITY IS GONE."
+      },
+      poaching: {
+        image: "assets/images/banner-gorilla.jpg",
+        text: "GORILLAS COULD DISAPPEAR FROM THE CONGO BASIN BY THE 2020."
+      },
+      deforestation: {
+        image: "assets/images/banner-deforestation.jpg",
+        text: "EVERY MINUTE COUNTS. REAL-TIME AWARENESS MEANS REAL-TIME INTERVENTION."
+      }
+    };
+
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      const banner = banners[tabId];
+      document.getElementById('bannerImage').src = banner.image;
+      document.getElementById('bannerText').textContent = banner.text;
+      document.getElementById('midImage').src = banner.image;
+    }
+  </script>
+  <div id="footer" class="bg-green-600 text-white py-8"></div>
+  <script src="/Rainforest-Front_end/assets/js/events.js"></script>
+</body>
+</html>
